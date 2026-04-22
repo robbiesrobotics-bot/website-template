@@ -136,7 +136,7 @@ export default function Home() {
               <a href={`tel:${company.phone}`} className="w-full sm:w-auto bg-[var(--primary)] text-white font-bold px-8 py-4 rounded-xl hover:bg-[var(--primary-hover)] transition shadow-lg text-base sm:text-lg">
                 Call {company.phone}
               </a>
-              <a href="{company.website}" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white/10 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/20 transition text-base sm:text-lg">
+              <a href={company.website} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white/10 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/20 transition text-base sm:text-lg">
                 View Our Work
               </a>
             </div>
@@ -324,7 +324,7 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <p className="text-center text-gray-500 text-sm mt-4 italic">Serving homeowners throughout {company.areaServed} and all of {company.areaServed}</p>
+            <p className="text-center text-gray-500 text-sm mt-4 italic">Serving homeowners throughout {company.areaServed}</p>
           </div>
 
           {/* 4-step process */}
@@ -530,7 +530,7 @@ export default function Home() {
             <p className="text-gray-500 max-w-2xl mx-auto text-base sm:text-lg mb-8">Complete exterior restoration using the industry's highest-quality materials, installed by factory-certified craftsmen.</p>
             {/* Color Visualizer CTA */}
             <a
-              href="{residential.colorVisualizer.href}"
+              href={residential.colorVisualizer.href}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[var(--secondary)] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[var(--dark)] transition shadow-md text-sm"
@@ -624,7 +624,7 @@ export default function Home() {
                   </motion.div>
                 ))}
               </div>
-              <a href="{company.website}/commercial" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[var(--primary-hover)] transition">
+              <a href={`${company.website}/commercial`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[var(--primary-hover)] transition">
                 View Commercial Services
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </a>
@@ -987,17 +987,17 @@ export default function Home() {
           <p className="text-white/50 text-sm mb-10">Available Monday – Friday | Same-Day Availability</p>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/60 mb-10">
-            <a href="{company.website}/roofing" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Roofing</a>
+            <a href={`${company.website}/roofing`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Roofing</a>
             <span className="text-white/30">|</span>
-            <a href="{company.website}/windows" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Windows</a>
+            <a href={`${company.website}/windows`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Windows</a>
             <span className="text-white/30">|</span>
-            <a href="{company.website}/siding" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Siding</a>
+            <a href={`${company.website}/siding`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Siding</a>
             <span className="text-white/30">|</span>
-            <a href="{company.website}/flood" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Flood</a>
+            <a href={`${company.website}/flood`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Flood</a>
             <span className="text-white/30">|</span>
-            <a href="{company.website}/fire" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Fire</a>
+            <a href={`${company.website}/fire`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Fire</a>
             <span className="text-white/30">|</span>
-            <a href="{company.website}/commercial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Commercial</a>
+            <a href={`${company.website}/commercial`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Commercial</a>
           </div>
         </div>
         {/* Divider */}
