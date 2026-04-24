@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+@layer base {
+  :root {
+    --primary:       #1B5E20;
+    --primary-hover: #14471A;
+    --secondary:    #33691E;
+    --dark:         #1B3A1B;
+    --accent:       #F1F8E9;
+    --blue-gray:    #90A4AE;
+    --warm:         #FAFAF5;
+  }
+}

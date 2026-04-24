@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+/* ── SHARED COLOR SYSTEM ────────────────────────────────────────────────────── */
+/* Each template overrides these CSS variables via its config                  */
+/* Default values match the MRI (Modern Remodeling) theme                     */
+@layer base {
+  :root {
+    --primary:          #8E1B1B;  /* CTA buttons, section labels, badges  */
+    --primary-hover:    #7a1616;
+    --primary-light:    #a82222;
+    --secondary:        #546571;  /* Section backgrounds, nav pills         */
+    --dark:             #2d3a45;  /* Header, footer, dark sections        */
+    --accent:           #EEF2F6;  /* Light section backgrounds            */
+    --blue-gray:        #9FB0BE;  /* Body text on dark backgrounds        */
+    --warm:             #FAFBFC;  /* Card backgrounds                     */
+    --light:            #ffffff;
+  }
+}
