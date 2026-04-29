@@ -70,7 +70,7 @@ export default function Home() {
       {/* ── STICKY HEADER ── */}
       <header className="sticky top-0 z-50 bg-[var(--dark)] shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-          <Image src="/modern_logo.png" alt="{company.name}" width={200} height={50} className="h-auto" />
+          <Image src="/jl_logo.png" alt="JL Tree Service" width={200} height={50} className="h-auto" />
           <div className="flex items-center gap-3">
             {/* Desktop: phone + form button */}
             <div className="hidden sm:flex items-center gap-3">
@@ -99,17 +99,19 @@ export default function Home() {
       ═══════════════════════════════════════ */}
       <section className="bg-[var(--dark)] border-b border-[var(--dark)] py-3 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="hidden sm:flex flex-wrap justify-center gap-2">
+          <div className="hidden lg:flex items-center justify-center gap-4 flex-wrap">
             {[
-              { label: "Damage Types", id: "damage", color: "bg-[var(--primary)]" },
-              { label: "Our Process", id: "process", color: "bg-[var(--secondary)]" },
-              { label: "Residential", id: "residential", color: "bg-[var(--primary)]" },
-              { label: "Commercial", id: "commercial", color: "bg-[var(--secondary)]" },
-              { label: "Why Choose Us", id: "why", color: "bg-[var(--primary)]" },
-              { label: "Warranties", id: "warranties", color: "bg-[var(--secondary)]" },
+              { label: "Services", id: "services", color: "bg-[var(--primary)]" },
+              { label: "Emergency Tree Service", id: "emergency", color: "bg-[var(--secondary)]" },
+              { label: "Service Area", id: "area", color: "bg-[var(--primary)]" },
+              { label: "Why Choose Us", id: "why", color: "bg-[var(--secondary)]" },
+              { label: "About Us", id: "about", color: "bg-[var(--primary)]" },
+              { label: "Our Team", id: "team", color: "bg-[var(--secondary)]" },
               { label: "FAQ", id: "faq", color: "bg-[var(--primary)]" },
+              { label: "Blog", id: "blog", color: "bg-[var(--secondary)]" },
+              { label: "Contact", id: "contact", color: "bg-[var(--primary)]" },
             ].map((c) => (
-              <motion.button key={c.id} onClick={() => scrollTo(c.id)} className={`${c.color} text-white text-xs font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition cursor-pointer`}
+              <motion.button key={c.id} onClick={() => scrollTo(c.id)} className={`${c.color} text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition cursor-pointer`}
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 {c.label}
@@ -1004,7 +1006,7 @@ export default function Home() {
         <div className="border-t border-white/10 max-w-5xl mx-auto"></div>
         {/* Legal strip */}
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <Image src="/modern_logo.png" alt="{company.name}" width={160} height={40} className="h-auto opacity-70" />
+          <Image src="/jl_logo.png" alt="{company.name}" width={160} height={40} className="h-auto opacity-70" />
           <p className="text-white/40 text-xs">{company.address} | {company.website.replace("https://","")}</p>
           <p className="text-white/40 text-xs">{company.licenses} | Established {company.establishedYear}</p>
         </div>
@@ -1015,7 +1017,7 @@ export default function Home() {
         <div className="fixed inset-0 z-[100] bg-[var(--dark)] flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
-            <Image src="/modern_logo.png" alt="{company.name}" width={180} height={45} className="h-auto" />
+            <Image src="/jl_logo.png" alt="{company.name}" width={180} height={45} className="h-auto" />
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="text-white hover:text-white/70 transition p-2"

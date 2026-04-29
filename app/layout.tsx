@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="fixed top-0 w-full bg-white/95 backdrop-blur z-50 border-b border-gray-100 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
             <a href="#" className="flex-shrink-0">
-              <img src="/modern_logo.png" alt="Modern Remodeling" className="h-10 w-auto" />
+              <img src="/jl_logo.png" alt="Modern Remodeling" className="h-10 w-auto" />
             </a>
             <div className="flex items-center gap-4">
               <a href="#" className="hidden sm:inline-flex items-center text-slate text-sm font-medium hover:text-burgundy transition">
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-slate text-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <a href="#">
-              <img src="/modern_logo.png" alt="Modern Remodeling" className="h-12 mx-auto mb-6 brightness-0 invert" />
+              <img src="/jl_logo.png" alt="Modern Remodeling" className="h-12 mx-auto mb-6 brightness-0 invert" />
             </a>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-blue-gray mb-4">
               <a href="tel:7033619944" className="hover:text-white transition">703-361-9944</a>
